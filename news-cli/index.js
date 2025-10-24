@@ -1,4 +1,4 @@
-// Si pasas un argumento, saluda con ese nombre; si no, "Hola mundo"
+// Saludo simple sin librerías externas
 const args = process.argv;
 const nombre = args[2];
 
