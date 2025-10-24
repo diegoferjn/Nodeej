@@ -1,8 +1,3 @@
-// index.js
-const { processCommand } = require('./src/cli');
-
-try {
-  processCommand(process.argv);
-} catch (e) {
-  console.log('[ERROR] Ocurrió un problema inesperado: ' + e.message);
-}
+// Muestra qué comando llegó (no implemento lógica de negocio)
+const cmd = process.argv[2];
+console.log('Comando:', cmd || '(vacío)');

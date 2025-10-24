@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js test",
-    "list": "node index.js list"
+   "start": "node index.js list",
+  "dev": "nodemon index.js list",
+  "filter": "node index.js filter",
+  "search": "node index.js search",
+  "help": "node index.js help",
+  "categories": "node index.js categories",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "echo \"Building...\"",
+  "clean": "echo \"Cleaning...\"",
+  "rebuild": "npm run clean && npm run build",
+  "setup": "npm install",
+  "demo": "npm run start && npm run filter && npm run search",
+  "all": "npm run setup && npm run demo"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +24,7 @@
   "dependencies": {
     "chalk": "^5.6.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
