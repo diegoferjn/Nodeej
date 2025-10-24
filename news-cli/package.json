@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node index.js test"
+    "test": "node index.js test",
+    "list": "node index.js list"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.6.2"
-  }
+  },
+  "devDependencies": {}
 }

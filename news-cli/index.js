@@ -1,9 +1,8 @@
-// Saludo simple sin librerías externas
-const args = process.argv;
-const nombre = args[2];
+// index.js
+const { processCommand } = require('./src/cli');
 
-if (nombre) {
-  console.log("Hola " + nombre);
-} else {
-  console.log("Hola mundo");
+try {
+  processCommand(process.argv);
+} catch (e) {
+  console.log('[ERROR] Ocurrió un problema inesperado: ' + e.message);
 }
