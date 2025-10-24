@@ -1,10 +1,6 @@
-// process.argv es un array con:
-// [0] ruta al binario de node
-// [1] ruta al archivo que ejecutamos
-// [2] primer argumento del usuario (si existe)
-
+// Si pasas un argumento, saluda con ese nombre; si no, "Hola mundo"
 const args = process.argv;
-const nombre = args[2]; // primer argumento del usuario
+const nombre = args[2];
 
 if (nombre) {
   console.log("Hola " + nombre);
